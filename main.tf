@@ -1,5 +1,5 @@
 variable "aws_key" {
-  default = "/home/nikolay/AWS_key/aws_key.pem"
+  default = "/path/to/your-file/file.pem"
 }
 
 provider "aws" {
@@ -40,7 +40,7 @@ resource "aws_security_group" "security_group" {
     }
 
     provisioner "file" {
-      source      = "/home/nikolay/repos/terraform-file-aws/hello.sh"
+      source      = "/path/to/your-script/hello.sh"
       destination = "/tmp/hello.sh"
     }
 
