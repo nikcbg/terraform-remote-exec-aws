@@ -3,14 +3,14 @@
 ### Purpose of the repsoitory
 - This is an example of Terraform configuration code that creates EC2 instance in AWS and then executes a bash script on the EC2 instance from a local machine. The bash script should display "Hello World" if execution is successful.
 
-### List of files files in respository.
+### List of files in the respository.
 - main.tf - file with terraform configuration code.
 - hello.sh - bash script that displays "Hello World".
 
 ### How to use this repository
 - Install `terraform` by following this [instructions](https://www.terraform.io/intro/getting-started/install.html).
-- Clone the repository to your local computer: `git clone git@github.com:nikcbg/tfe_variables_aws`.
-- Go into the cloned repo on your computer: `cd tfe_variables_aws`.
+- Clone the repository to your local computer: `git clone https://github.com/nikcbg/terraform-remote-exec-aws`.
+- Go into the cloned repo on your computer: `cd terraform-remote-exec-aws`.
 
 ### Note: NEVER make your any credentials publicly available so you can prevent your account from been compromised.
 - To be able to authenticate to your AWS account without compromising your credentials you need to use environment variables.
